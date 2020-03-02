@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>TESTES COM BOTÕES</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button [text]="buttonText" [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" (click)="log()" color="success">Log no console</ion-button>
+  <br>
+  <ion-button expand="block" (click)="presentAlert()" color="danger">Alerta</ion-button>
+</ion-content>
+
+
+
+

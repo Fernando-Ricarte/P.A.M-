@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Radio</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button [text]="buttonText" [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>Teste de Radio</ion-label>
+      </ion-list-header>
+      
+      <ion-item>
+        <ion-label>OPÇÃO 1</ion-label>
+        <ion-radio slot="start" color="danger" value="op_1"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>OPÇÃO 2</ion-label>
+        <ion-radio slot="start" color="success" value="op_2"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>OPÇÂO 3</ion-label>
+        <ion-radio slot="start" color="danger" value="op_3"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+</ion-content>
