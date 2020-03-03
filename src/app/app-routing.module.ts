@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'radio',
     loadChildren: () => import('./radio/radio.module').then( m => m.RadioPageModule)
   },
+  {
+    path: 'notes',
+    loadChildren: () => import('./notes/notes.module').then( m => m.NotesPageModule)
+  },
 ];
 
 @NgModule({
