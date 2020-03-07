@@ -22,7 +22,15 @@ const routes: Routes = [
   {
     path: 'notes',
     loadChildren: () => import('./notes/notes.module').then( m => m.NotesPageModule)
+  },  {
+    path: 'brinks',
+    loadChildren: () => import('./brinks/brinks.module').then( m => m.BrinksPageModule)
   },
+  {
+    path: 'images',
+    loadChildren: () => import('./images/images.module').then( m => m.ImagesPageModule)
+  },
+
 ];
 
 @NgModule({

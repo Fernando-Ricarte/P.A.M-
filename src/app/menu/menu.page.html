@@ -19,9 +19,10 @@
       <ion-list> 
         <ion-item class="side" (click)="openPage('button')"><ion-icon name="skull-outline"></ion-icon>BOTÕES</ion-item>
         <ion-item class="side" (click)="openPage('radio')"> <ion-icon name="skull-outline"></ion-icon>RADIO</ion-item>
+        <ion-item class="side" (click)="openPage('images')"><ion-icon name="skull-outline"></ion-icon>IMAGENS</ion-item>
         <ion-item class="side"><ion-icon name="skull-outline"></ion-icon>                                 --</ion-item>
         <ion-item class="side"><ion-icon name="skull-outline"></ion-icon>                                 --</ion-item>
-        <ion-item class="side"><ion-icon name="skull-outline"></ion-icon>                                 --</ion-item>
+        <ion-item class="side" (click)="openPage('brinks')">  <ion-icon name="skull-outline"></ion-icon>TESTES</ion-item>
       </ion-list>
     </ion-content>
   </ion-menu>
@@ -30,7 +31,11 @@
   <ion-router-outlet id="main"></ion-router-outlet>
   
   <br> <br> <br>
-  
+  <ion-card class="nome">
+    Fernando Ricarte Da Cruz
+    <br>
+    2º Módulo de Desenvolvimento de Sistemas
+  </ion-card>
   <ion-card>
     <ion-card-header>
       <ion-card-title class="titulo">Programação e Algoritmos Mobile</ion-card-title>
@@ -42,12 +47,14 @@
     <ion-item>
       <ion-icon name="pin" class="ico" slot="start"></ion-icon>
       <ion-label class="sub">ANOTAÇÕES</ion-label>
-      <ion-button fill="outline" (click)="openPage('notes')" slot="end">View</ion-button>
+      <ion-button fill="outline" (click)="openPage('notes')" slot="end">Verificar</ion-button>
     </ion-item>
   
-    <ion-card-content>
-      Verificar o que está pendente a ser feito etc...
+    <ion-card-content class="sub">
+      Verificar o que está pendente a ser feito
     </ion-card-content>
   </ion-card>
+
+
   
 </ion-content>

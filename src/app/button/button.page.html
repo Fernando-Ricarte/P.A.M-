@@ -9,9 +9,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content> 
+  <ion-list-header>
+    <ion-label class="titulo">Escreve "Funcionando no console"</ion-label>
+  </ion-list-header>
+  
   <ion-button expand="block" (click)="log()" color="success">Log no console</ion-button>
-  <br>
+  
+  <ion-list-header>
+    <ion-label class="titulo"> Faz um alerta na tela do usuário</ion-label> 
+  </ion-list-header>
+  
   <ion-button expand="block" (click)="presentAlert()" color="danger">Alerta</ion-button>
 </ion-content>
 
