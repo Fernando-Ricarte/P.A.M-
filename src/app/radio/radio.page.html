@@ -1,6 +1,7 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Radio</ion-title>
+    <ion-title class="nome">Caixas de seleção</ion-title>
+    <!--Botão de retorno ao menu-->
     <ion-buttons slot="start">
       <ion-back-button [text]="buttonText" [icon]="buttonIcon">
       </ion-back-button>
@@ -9,15 +10,11 @@
 </ion-header>
 
 <ion-content>
-    <ion-radio-group>
-      <ion-list-header>
-        <ion-label class="titulo">(cada opção selecionada um log é escrito)</ion-label>
-      </ion-list-header>
-      <br>
+      <!--Caixa de seleção do tipo radio // sempre que selecionar uma das opções, um log será registrado no console-->
       <ion-list-header>
         <ion-label class="titulo">Teste de Radio</ion-label>
       </ion-list-header>
-
+    <ion-radio-group>
       <ion-item>
         <ion-label>OPÇÃO 1</ion-label>
         <ion-radio slot="start" (click)="log1()" color="success" value="op_1"></ion-radio>
@@ -35,7 +32,7 @@
     </ion-radio-group>
     
     
-    
+    <!--Caixa de seleção do tipo checkbox // em cada um das opções, um log será registrado no console--> 
     <ion-list-header>
       <ion-label class="titulo">Teste de Checkbox</ion-label>
     </ion-list-header>

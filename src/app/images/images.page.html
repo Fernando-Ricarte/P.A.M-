@@ -1,13 +1,43 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>IMAGENS</ion-title>
+    <ion-title class="nomes">IMAGENS</ion-title>
+    
+    <!--Botão para retornar à página anterior-->
     <ion-buttons slot="start">
       <ion-back-button [text]="buttonText" [icon]="buttonIcon">
       </ion-back-button>
     </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <br>
+    <!--ion-grid utilizado para organizar as imagens de forma ordenada--> 
+    <ion-grid class="container">
+      <ion-img class="img" src="assets/img/doom.jpg"></ion-img>
+    
+    
+      <ion-img class="img" src="assets/img/ozzy.jpg"></ion-img>
+    </ion-grid>  
+      
+    <br>
 
+    <!--Imagem utilizada para fazer uma thumbnail-->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/img/ozzy.jpg">
+      </ion-thumbnail>
+        <ion-label class="nomes">Exemplo de Thumbnail</ion-label>
+    </ion-item>
+      
+    <br>
+
+    <!--Imagem utilizada para fazer um avatar-->
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/img/doom.jpg">
+      </ion-avatar>
+      <ion-label class="nomes">Exemplo de Avatar</ion-label>
+    </ion-item>
 </ion-content>

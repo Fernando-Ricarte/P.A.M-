@@ -12,6 +12,7 @@ export class RadioPage implements OnInit {
 
   ngOnInit() {
   }
+  /*logs utilizados para resgistrar as opções do radio e checkbox*/ 
   
   log1(){
     console.log('1º valor do radio pressionado!');

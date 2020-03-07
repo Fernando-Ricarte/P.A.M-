@@ -7,8 +7,10 @@ export class AlertService {
 
   constructor() { }
 
-
+  /**
+   * Serviço criado em sala de aula 
+   */
   mostraAlerta(){
-    alert("Módulo utilizado apenas para realização de testes com ionic.")
+    alert("Módulo utilizado apenas para realização de testes com ionic")
   }
 }

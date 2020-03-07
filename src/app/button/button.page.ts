@@ -15,11 +15,14 @@ export class ButtonPage implements OnInit {
   ngOnInit() {
     
   }
-
+  /** função para registrar no console ao pressionar do botão */
   log(){
-    console.log('Funcionando');
+    console.log('Não está funcionando!');
   }
-
+  
+  /**
+   * função para aparecer um alerta na tela do usuário
+   */
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'ATENÇÃO!',

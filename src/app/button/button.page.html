@@ -1,6 +1,7 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>TESTES COM BOTÕES</ion-title>
+    <ion-title class="titulo">TESTES COM BOTÕES</ion-title>
+    <!--Botão de retorno-->
     <ion-buttons slot="start">
       <ion-back-button [text]="buttonText" [icon]="buttonIcon">
       </ion-back-button>
@@ -10,16 +11,11 @@
 </ion-header>
 
 <ion-content> 
-  <ion-list-header>
-    <ion-label class="titulo">Escreve "Funcionando no console"</ion-label>
-  </ion-list-header>
-  
+  <!--Botão que ao pressionado irá fazer um registro no console com base na função log()-->
   <ion-button expand="block" (click)="log()" color="success">Log no console</ion-button>
   
-  <ion-list-header>
-    <ion-label class="titulo"> Faz um alerta na tela do usuário</ion-label> 
-  </ion-list-header>
-  
+  <br>
+  <!--Botão que ao pressionado irá mostrar um alerta na tela do usuário com base na função presentAlert()-->
   <ion-button expand="block" (click)="presentAlert()" color="danger">Alerta</ion-button>
 </ion-content>
 
