@@ -17,12 +17,30 @@
 
 .side{
     color: #B22222;
+    text-transform: uppercase;
 }
 
 .nome{
     text-align: center;
     color: #B22222;
-    background-color: #363636;
+    background-color: #242424;
     font-weight: bold;
 }
 
+ion-toolbar{
+    --ion-background-color: #242424;
+}
+ion-content{
+    --ion-background-color: #383838cc;
+}
+
+ion-card{
+    --ion-background-color: #242424;
+}
+.sid{
+    color: #B22222;
+}
+
+.icon{
+    color: #410cd3;
+}

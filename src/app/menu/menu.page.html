@@ -3,7 +3,7 @@
     
     <!--Botão utilizado para mostar o side menu-->
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button class="sid"></ion-menu-button>
       <ion-title class="titulo">P.A.M  <ion-icon name="logo-android" class="android"></ion-icon></ion-title>
     </ion-buttons>
     
@@ -21,11 +21,15 @@
     <!--Componentes do side menu, cada um com seu respectivo nome e módulo ao ser clicado-->
     <ion-content>
       <ion-list> 
+        <!--Utilizando método para percorrer um array que adiciona os conteúdos do side menu-->
+        <ion-item  *ngFor="let item of itens" (click)="openPage(item.path)" class="side"><ion-icon name="skull-outline" class="icon"></ion-icon>&nbsp;{{item.nome}}</ion-item>
+  
+        <!--
         <ion-item class="side" (click)="openPage('button')"><ion-icon name="skull-outline"></ion-icon>BOTÕES</ion-item>
         <ion-item class="side" (click)="openPage('radio')"> <ion-icon name="skull-outline"></ion-icon>CAIXAS DE SELEÇÃO</ion-item>
         <ion-item class="side" (click)="openPage('images')"><ion-icon name="skull-outline"></ion-icon>IMAGENS</ion-item>
-        <!--<ion-item class="side"><ion-icon name="skull-outline"></ion-icon>--</ion-item>-->
         <ion-item class="side" (click)="openPage('brinks')">  <ion-icon name="skull-outline"></ion-icon>TESTES</ion-item>
+        -->
       </ion-list>
     </ion-content>
   </ion-menu>
@@ -54,7 +58,7 @@
   <ion-card>
     <ion-item>
       <ion-icon name="pin" class="ico" slot="start"></ion-icon>
-      <ion-label class="sub">ANOTAÇÕES</ion-label>
+      <ion-label class="titulo">ANOTAÇÕES</ion-label>
       <ion-button fill="outline" (click)="openPage('notes')" slot="end">Verificar</ion-button>
     </ion-item>
   

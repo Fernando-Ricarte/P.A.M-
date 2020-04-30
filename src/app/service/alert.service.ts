@@ -11,6 +11,6 @@ export class AlertService {
    * Serviço criado em sala de aula 
    */
   mostraAlerta(){
-    alert("Módulo utilizado apenas para realização de testes com ionic")
+    alert("Módulo utilizado para realização de testes com ionic")
   }
 }

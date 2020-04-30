@@ -26,7 +26,7 @@
       </ion-item>
 
       <ion-item>
-        <ion-label>OPÇÂO 3</ion-label>
+        <ion-label>OPÇÃO 3</ion-label>
         <ion-radio slot="start"  (click)="log3()" color="success" value="op_3"></ion-radio>
       </ion-item>
     </ion-radio-group>
@@ -49,4 +49,25 @@
       <ion-checkbox color="dark" (click)="check3()"  slot="start"></ion-checkbox>
       <ion-label>OPÇÃO 3</ion-label>
     </ion-item>
+    
+    
+    <!--Caixas de seleção com método que mostra os atributos e valores do checkbox-->
+    <ion-list-header>
+      <ion-label class="titulo"> Testes com valores e eventos</ion-label>
+    </ion-list-header>
+    
+    <ion-list (ionChange)="escreveConsole($event)">
+      <ion-item>
+        <ion-checkbox color="dark"  value="Ednaldo"  slot="start"></ion-checkbox>
+        <ion-label>OPÇÃO 1</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox color="dark"   value="Pereira"  slot="start"></ion-checkbox>
+        <ion-label>OPÇÃO 2</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox color="dark"   value="Trasher"  slot="start"></ion-checkbox>
+        <ion-label>OPÇÃO 3</ion-label>
+      </ion-item>
+    </ion-list>
 </ion-content>
